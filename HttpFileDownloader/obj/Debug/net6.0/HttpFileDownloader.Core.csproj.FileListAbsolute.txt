@@ -1,0 +1,12 @@
+G:\Visual Studio Applications\HttpFileDownloader\HttpFileDownloader\bin\Debug\net6.0\HttpFileDownloader.Core.deps.json
+G:\Visual Studio Applications\HttpFileDownloader\HttpFileDownloader\bin\Debug\net6.0\HttpFileDownloader.Core.dll
+G:\Visual Studio Applications\HttpFileDownloader\HttpFileDownloader\bin\Debug\net6.0\HttpFileDownloader.Core.pdb
+G:\Visual Studio Applications\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\HttpFileDownloader.Core.csproj.AssemblyReference.cache
+G:\Visual Studio Applications\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\HttpFileDownloader.Core.GeneratedMSBuildEditorConfig.editorconfig
+G:\Visual Studio Applications\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\HttpFileDownloader.Core.AssemblyInfoInputs.cache
+G:\Visual Studio Applications\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\HttpFileDownloader.Core.AssemblyInfo.cs
+G:\Visual Studio Applications\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\HttpFileDownloader.Core.csproj.CoreCompileInputs.cache
+G:\Visual Studio Applications\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\HttpFileDownloader.Core.dll
+G:\Visual Studio Applications\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\refint\HttpFileDownloader.Core.dll
+G:\Visual Studio Applications\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\HttpFileDownloader.Core.pdb
+G:\Visual Studio Applications\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\ref\HttpFileDownloader.Core.dll
