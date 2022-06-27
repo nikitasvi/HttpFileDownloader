@@ -6,8 +6,6 @@ namespace HttpFileDownloader.Core
     {
         public string Url { get; set; }
 
-        public IPAddress Host { get; set; }
-
-        public string Method { get; set; }
+        public HttpMethod Method { get; set; }
     }
 }

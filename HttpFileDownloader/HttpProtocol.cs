@@ -1,30 +1,42 @@
-﻿using System.Text;
+﻿using System.Net;
+using System.Net.Sockets;
+using System.Text;
 
 namespace HttpFileDownloader.Core
 {
     public class HttpProtocol
     {
-        public byte[] CreateHttpRequest(HttpRequest request)
+        public static byte[] CreateHttpRequest(HttpRequest request)
         {
-            return Encoding.UTF8.GetBytes($"{request.Method} {request.Url} HTTP/1.1\r\nHost: {request.Host}\r\n\r\n");
+            IPAddress ip = NetUtil.ResolveIpAddress(HttpHelper.GetDomain(request.Url));
+            return Encoding.ASCII.GetBytes($"{request.Method} {request.Url} HTTP/1.1\r\nHost: {ip}\r\n\r\n");
         }
 
-        public HttpResponse GetHEADResponse(byte[] buffer)
+        public static byte[] CreateHttpRequest(HttpRequest request, long start, long end)
+        {
+            IPAddress ip = NetUtil.ResolveIpAddress(HttpHelper.GetDomain(request.Url));
+            return Encoding.ASCII.GetBytes($"{request.Method} {HttpHelper.GetPath(request.Url)} HTTP/1.1\r\nHost: {ip}\r\nRange: bytes={start}-{end}\r\n\r\n");
+        }
+
+
+        public static HttpResponse GetResponse(Socket socket)
         { 
             HttpResponse response = new HttpResponse
             {
                 Response = string.Empty,
             };
 
-            for (int i = 0; i < buffer.Length; i++)
-            {
-                if (response.Response.Contains("\r\n\r\n"))
-                {
-                    break;
-                }
+            var sb = new StringBuilder();
 
-                response.Response += Encoding.UTF8.GetString(buffer, i, 1);
+            do
+            {
+                byte[] buffer = new byte[1];
+                socket.Receive(buffer, 0, 1, 0);
+                sb.Append(Encoding.ASCII.GetString(buffer));
             }
+            while (!sb.ToString().Contains("\r\n\r\n"));
+
+            response.Response = sb.ToString();
 
             return response;
         }

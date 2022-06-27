@@ -1,6 +1,4 @@
-﻿using System.Net;
-
-namespace HttpFileDownloader
+﻿namespace HttpFileDownloader
 {
     public class HttpResponse
     {

@@ -1,92 +1,61 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Sockets;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-
-namespace HttpFileDownloader.Core
+﻿namespace HttpFileDownloader.Core
 {
-    public class DownloadStrategy : IDownloadStrategy
+    public class DownloadStrategy
     {
-        public int maxCount;
-        public int minSize;
-        public int maxSize;
-
-        HttpProtocol protocol = new();
-        readonly Regex HttpRegex = new(@"^((http[s]?|ftp):\/)?\/?([^:\/\s]+)(:([^\/]*))?((\/\w+)*\/)([\w\-\.]+[^#?\s]+)(\?([^#]*))?(#(.*))?$");
-        readonly Regex ContentLengthRegex = new("\\\r\nContent-Length: (.*?)\\\r\n");
-
-        public DownloadStrategy(int maxThreadsCount, int minPartSize, int maxPartSize)
+        public static void ChooseStrategy(int maxSize, int maxCount, DownloadMap downloadMap)
         {
-            this.maxCount = maxThreadsCount;
-            this.minSize = minPartSize;
-            this.maxSize = maxPartSize;
-        }
-
-        public void Download(string url)
-        { 
-            Match mat = HttpRegex.Match(url);
-
-            var ipAddress = NetUtil.ResolveIpAddress(mat.Groups[3].Value);
-            IPEndPoint endPoint = new(ipAddress, 80);
-
-            byte[] buffer = SendHEADRequest(endPoint, url, ipAddress, protocol);
-
-            HttpResponse response = protocol.GetHEADResponse(buffer);
-
+            List<Region> regions = downloadMap.GetRegions();
             
-            Match m = ContentLengthRegex.Match(response.Response);
-            int contentLength = int.Parse(m.Groups[1].ToString());
-
-            Socket socket = new(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            socket.Connect(endPoint);
-
-            HttpRequest GetRequest = new HttpRequest
+            while (regions.FindAll(x => x.State == State.Planned).Count + regions.FindAll(x => x.State == State.InProcess).Count < maxCount)
             {
-                Method = "GET",
-                Url = url,
-                Host = ipAddress,
-            };
+                Region freeBlock = regions.Find(x => x.State == State.Free);
 
-            socket.Send(protocol.CreateHttpRequest(GetRequest));
-
-            byte[] bodyBuff = new byte[contentLength];
-            socket.Receive(bodyBuff, 0, contentLength, 0);
-
-            using (var stream = new FileStream("file.zip", FileMode.Create))
-            {
-                stream.Write(bodyBuff, 0, bodyBuff.Length);
+                if (freeBlock != null)
+                {
+                    if (freeBlock.Length < maxSize)
+                    {
+                        freeBlock.State = State.Planned;
+                    }
+                    else
+                    {
+                        if (freeBlock.Length > 2 * maxSize)
+                        {
+                            downloadMap.MarkRegion(freeBlock.Start, maxSize, State.Planned);
+                        }
+                        else
+                        {
+                            downloadMap.MarkRegion(freeBlock.Start, freeBlock.Length / 2, State.Planned);
+                        }
+                    }
+                    regions = downloadMap.GetRegions();
+                }
+                else
+                {
+                    break;
+                }   
             }
-
-            Encoding.UTF8.GetString(bodyBuff);
-
-            socket.Close();
+            ConcatDownloadedRegions(downloadMap);
         }
 
-
-        private byte[] SendHEADRequest(IPEndPoint endPoint, string url, IPAddress ipAddress, HttpProtocol protocol)
+        private static void ConcatDownloadedRegions(DownloadMap downloadMap)
         {
-            Socket socket = new(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            socket.Connect(endPoint);
+            var regions = downloadMap.GetRegions();
+            var downloadedRegions = downloadMap.GetRegions().FindAll(x => x.State == State.Downloaded);
 
-            HttpRequest HeadRequest = new HttpRequest
+            for (int i = 1; i < downloadedRegions.Count; i++)
             {
-                Method = "HEAD",
-                Url = url,
-                Host = ipAddress,
-            };
+                if (downloadedRegions[i].Start == (downloadedRegions[i - 1].Start + downloadedRegions[i - 1].Length))
+                {
+                    downloadedRegions[i - 1].Length += downloadedRegions[i].Length;
 
-            socket.Send(protocol.CreateHttpRequest(HeadRequest));
+                    regions.Remove(downloadedRegions[i]);
+                    downloadedRegions.Remove(downloadedRegions[i]);
+                    //downloadMap.MarkRegion(downloadedRegions[i].Start, downloadedRegions[i].Length, State.Downloaded);
 
-            byte[] buffer = new byte[2048];
-
-            socket.Receive(buffer);
-            socket.Close();
-
-            return buffer;
+                    i--;
+                    regions = downloadMap.GetRegions();
+                }
+            }
         }
     }
 }

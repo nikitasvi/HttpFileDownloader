@@ -17,3 +17,26 @@ G:\Visual Studio Applications\HttpFileDownloader\HttpFileDownloader.Console\obj\
 G:\Visual Studio Applications\HttpFileDownloader\HttpFileDownloader.Console\obj\Debug\net6.0\HttpFileDownloader.Console.genruntimeconfig.cache
 G:\Visual Studio Applications\HttpFileDownloader\HttpFileDownloader.Console\obj\Debug\net6.0\ref\HttpFileDownloader.Console.dll
 G:\Visual Studio Applications\HttpFileDownloader\HttpFileDownloader.Console\obj\Debug\net6.0\HttpFileDownloader.Console.csproj.ResolveComReference.cache
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader.Console\obj\Debug\net6.0\HttpFileDownloader.Console.csproj.AssemblyReference.cache
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader.Console\obj\Debug\net6.0\HttpFileDownloader.Console.csproj.ResolveComReference.cache
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader.Console\obj\Debug\net6.0\HttpFileDownloader.Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader.Console\obj\Debug\net6.0\HttpFileDownloader.Console.AssemblyInfoInputs.cache
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader.Console\obj\Debug\net6.0\HttpFileDownloader.Console.AssemblyInfo.cs
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader.Console\obj\Debug\net6.0\HttpFileDownloader.Console.csproj.CoreCompileInputs.cache
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader.Console\obj\Debug\net6.0\HttpFileDownloader.Console.dll
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader.Console\obj\Debug\net6.0\ref\HttpFileDownloader.Console.dll
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader.Console\obj\Debug\net6.0\HttpFileDownloader.Console.pdb
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader.Console\bin\Debug\net6.0\HttpFileDownloader.Console.exe
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader.Console\bin\Debug\net6.0\HttpFileDownloader.Console.deps.json
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader.Console\bin\Debug\net6.0\HttpFileDownloader.Console.runtimeconfig.json
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader.Console\bin\Debug\net6.0\HttpFileDownloader.Console.dll
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader.Console\bin\Debug\net6.0\HttpFileDownloader.Console.pdb
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader.Console\bin\Debug\net6.0\HttpFileDownloader.Core.dll
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader.Console\bin\Debug\net6.0\HttpFileDownloader.Core.pdb
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader.Console\obj\Debug\net6.0\HttpFileDownloader.Console.csproj.CopyComplete
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader.Console\obj\Debug\net6.0\refint\HttpFileDownloader.Console.dll
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader.Console\obj\Debug\net6.0\HttpFileDownloader.Console.genruntimeconfig.cache
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader.Console\bin\Debug\net6.0\MimeKit.dll
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader.Console\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader.Console\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader.Console\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll

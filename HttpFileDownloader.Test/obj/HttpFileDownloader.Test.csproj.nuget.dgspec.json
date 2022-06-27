@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Visual Studio Applications\\HttpFileDownloader\\HttpFileDownloader.Test\\HttpFileDownloader.Test.csproj": {}
+    "C:\\Users\\nikit\\OneDrive\\Documents\\GitHub\\HttpFileDownloader\\HttpFileDownloader.Test\\HttpFileDownloader.Test.csproj": {}
   },
   "projects": {
-    "G:\\Visual Studio Applications\\HttpFileDownloader\\HttpFileDownloader.Test\\HttpFileDownloader.Test.csproj": {
+    "C:\\Users\\nikit\\OneDrive\\Documents\\GitHub\\HttpFileDownloader\\HttpFileDownloader.Test\\HttpFileDownloader.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Visual Studio Applications\\HttpFileDownloader\\HttpFileDownloader.Test\\HttpFileDownloader.Test.csproj",
+        "projectUniqueName": "C:\\Users\\nikit\\OneDrive\\Documents\\GitHub\\HttpFileDownloader\\HttpFileDownloader.Test\\HttpFileDownloader.Test.csproj",
         "projectName": "HttpFileDownloader.Test",
-        "projectPath": "G:\\Visual Studio Applications\\HttpFileDownloader\\HttpFileDownloader.Test\\HttpFileDownloader.Test.csproj",
+        "projectPath": "C:\\Users\\nikit\\OneDrive\\Documents\\GitHub\\HttpFileDownloader\\HttpFileDownloader.Test\\HttpFileDownloader.Test.csproj",
         "packagesPath": "C:\\Users\\nikit\\.nuget\\packages\\",
-        "outputPath": "G:\\Visual Studio Applications\\HttpFileDownloader\\HttpFileDownloader.Test\\obj\\",
+        "outputPath": "C:\\Users\\nikit\\OneDrive\\Documents\\GitHub\\HttpFileDownloader\\HttpFileDownloader.Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nikit\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "G:\\Visual Studio Applications\\HttpFileDownloader\\HttpFileDownloader\\HttpFileDownloader.Core.csproj": {
-                "projectPath": "G:\\Visual Studio Applications\\HttpFileDownloader\\HttpFileDownloader\\HttpFileDownloader.Core.csproj"
+              "C:\\Users\\nikit\\OneDrive\\Documents\\GitHub\\HttpFileDownloader\\HttpFileDownloader\\HttpFileDownloader.Core.csproj": {
+                "projectPath": "C:\\Users\\nikit\\OneDrive\\Documents\\GitHub\\HttpFileDownloader\\HttpFileDownloader\\HttpFileDownloader.Core.csproj"
               }
             }
           }
@@ -80,14 +80,14 @@
         }
       }
     },
-    "G:\\Visual Studio Applications\\HttpFileDownloader\\HttpFileDownloader\\HttpFileDownloader.Core.csproj": {
+    "C:\\Users\\nikit\\OneDrive\\Documents\\GitHub\\HttpFileDownloader\\HttpFileDownloader\\HttpFileDownloader.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Visual Studio Applications\\HttpFileDownloader\\HttpFileDownloader\\HttpFileDownloader.Core.csproj",
+        "projectUniqueName": "C:\\Users\\nikit\\OneDrive\\Documents\\GitHub\\HttpFileDownloader\\HttpFileDownloader\\HttpFileDownloader.Core.csproj",
         "projectName": "HttpFileDownloader.Core",
-        "projectPath": "G:\\Visual Studio Applications\\HttpFileDownloader\\HttpFileDownloader\\HttpFileDownloader.Core.csproj",
+        "projectPath": "C:\\Users\\nikit\\OneDrive\\Documents\\GitHub\\HttpFileDownloader\\HttpFileDownloader\\HttpFileDownloader.Core.csproj",
         "packagesPath": "C:\\Users\\nikit\\.nuget\\packages\\",
-        "outputPath": "G:\\Visual Studio Applications\\HttpFileDownloader\\HttpFileDownloader\\obj\\",
+        "outputPath": "C:\\Users\\nikit\\OneDrive\\Documents\\GitHub\\HttpFileDownloader\\HttpFileDownloader\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nikit\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -115,6 +115,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "MimeKit": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

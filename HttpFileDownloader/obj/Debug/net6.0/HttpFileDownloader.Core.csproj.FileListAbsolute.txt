@@ -10,3 +10,15 @@ G:\Visual Studio Applications\HttpFileDownloader\HttpFileDownloader\obj\Debug\ne
 G:\Visual Studio Applications\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\refint\HttpFileDownloader.Core.dll
 G:\Visual Studio Applications\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\HttpFileDownloader.Core.pdb
 G:\Visual Studio Applications\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\ref\HttpFileDownloader.Core.dll
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\HttpFileDownloader.Core.csproj.AssemblyReference.cache
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\HttpFileDownloader.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\HttpFileDownloader.Core.AssemblyInfoInputs.cache
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\HttpFileDownloader.Core.AssemblyInfo.cs
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\HttpFileDownloader.Core.csproj.CoreCompileInputs.cache
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\HttpFileDownloader.Core.dll
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\ref\HttpFileDownloader.Core.dll
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\HttpFileDownloader.Core.pdb
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader\bin\Debug\net6.0\HttpFileDownloader.Core.deps.json
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader\bin\Debug\net6.0\HttpFileDownloader.Core.dll
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader\bin\Debug\net6.0\HttpFileDownloader.Core.pdb
+C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\refint\HttpFileDownloader.Core.dll
