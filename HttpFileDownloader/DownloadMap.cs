@@ -23,11 +23,14 @@ namespace HttpFileDownloader.Core
 
     public class DownloadMap : IDownloadMap
     {
+        private long totalSize;
+        ProgressBar progressBar = new ProgressBar();
         List<Region> regions;
         public DownloadMap(long size)
         {
             this.regions = new List<Region>();
             this.regions.Add(new Region(0, size, State.Free));
+            totalSize = size;
         }
 
         public DownloadMap(List<Region> regions)
@@ -43,8 +46,14 @@ namespace HttpFileDownloader.Core
         public bool IsDownloaded()
         {
             if (this.regions.Count == 1 && this.regions.First().State == State.Downloaded)
+            {
+                progressBar.Report(1.0);
                 return true;
-            else return false;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         [MethodImpl(MethodImplOptions.Synchronized)]
@@ -55,6 +64,12 @@ namespace HttpFileDownloader.Core
             if (region.Start == offset && region.Length == length)
             {
                 region.State = state;
+                if (state == State.Downloaded)
+                {
+                    var regions = this.regions.FindAll(x => x.State == State.Downloaded).Sum(s => s.Length);
+                    double percentage = (double)regions / (double)totalSize;
+                    progressBar.Report(percentage);
+                }
             }
             else
             {

@@ -5,9 +5,10 @@ namespace HttpFileDownloader.Core
 {
     public class HttpDownloader
     {
-        public int maxCount;
-        public int minSize;
-        public int maxSize;
+        private int maxCount;
+        private int minSize;
+        private int maxSize;
+
         private string url;
 
         IPAddress iPAddress;
@@ -64,9 +65,10 @@ namespace HttpFileDownloader.Core
                         this.downloadMap.MarkRegion(region.Start, region.Length, State.InProcess);
                         Thread thread = new Thread(() => DownloadPart(region));
                         thread.Start();
+
                         //DownloadPart(region);
                     }
-                }
+               }
             }
         }
 
@@ -88,7 +90,7 @@ namespace HttpFileDownloader.Core
 
             byte[] receiveBytes = new byte[region.Length];
 
-            int bytesReceived;
+            int bytesReceived = 0;
             int offset = 0;
 
             while (offset != region.Length)
@@ -96,11 +98,13 @@ namespace HttpFileDownloader.Core
                 bytesReceived = socket.Receive(receiveBytes, offset, (int)(region.Length - offset), SocketFlags.None);
                 offset += bytesReceived;
             }
-
+            //Console.Clear();
+            Console.SetCursorPosition(0, Console.CursorTop);
+            Console.WriteLine("Download Speed:" + Math.Round((double)bytesReceived / 1024, 2) + "KB/s");
             FileWriter.Write(receiveBytes, (int)region.Start);
-            socket.Close();
-
             this.downloadMap.MarkRegion(region.Start, region.Length, State.Downloaded);
+
+            socket.Close();
         } 
     }
 }

@@ -4,12 +4,13 @@
     {
         private static string downloadFolder = Path.Combine(System.Environment.GetEnvironmentVariable("USERPROFILE"), "Downloads");
         private static string filePath;
+
         public static void Write(byte[] data, int start)
         {
-            using (var stream = new FileStream(filePath, FileMode.Open))
+            var locker = new RWLock();
+            using (locker.WriteLock())
             {
-                var locker = new RWLock();
-                using (locker.WriteLock())
+                using (var stream = new FileStream(filePath, FileMode.Open, FileAccess.Write, FileShare.Write))
                 {
                     stream.Seek(start, SeekOrigin.Begin);
                     stream.Write(data, 0, data.Length);

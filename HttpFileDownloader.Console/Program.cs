@@ -1,15 +1,33 @@
-﻿using System.Net;
-using System.Text.RegularExpressions;
-using HttpFileDownloader.Core;
-
-namespace HttpFileDownloader.Console
+﻿namespace HttpFileDownloader.Console
 {
-    public class HttpFileDownloader
+    using HttpFileDownloader.Core;
+    using System;
+    using System.Configuration;
+
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
+            if (args.Length == 0)
+            {
+                Console.WriteLine("Enter Url of File: ");
+            }
+
             HttpDownloader httpDownloader = new HttpDownloader(
-                ConfigurationManager.AppSettings[]);
+                Convert.ToInt32(ConfigurationManager.AppSettings["MaxThreadsCount"]),
+                Convert.ToInt32(ConfigurationManager.AppSettings["MinSize"]),
+                Convert.ToInt32(ConfigurationManager.AppSettings["MaxSize"]));
+
+            try
+            {
+                Console.WriteLine("Start Downloading...  ");
+                httpDownloader.Download(args[0]);
+            }
+            finally
+            {
+
+                Console.WriteLine("\nDownload Complete!");
+            }
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XXARTLdGalQbvslTA4dpbCvf52ZvJkWd65Vm3/kFR5qOhu9XLaQ8FX8eKq67MQdUvxHkQ0baXfnht49pSlsnOw==",
+  "dgSpecHash": "TVtaoriKkDEKgmPAleofarBpQf3uP7/uPWppJCmrc7EbxOT0zJ+juX/cxYilETz0UmIQ71npsSjeqi6C6bfLxA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nikit\\OneDrive\\Documents\\GitHub\\HttpFileDownloader\\HttpFileDownloader.Test\\HttpFileDownloader.Test.csproj",
+  "projectFilePath": "G:\\GitHub\\HttpFileDownloader\\HttpFileDownloader.Test\\HttpFileDownloader.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nikit\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\nikit\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",

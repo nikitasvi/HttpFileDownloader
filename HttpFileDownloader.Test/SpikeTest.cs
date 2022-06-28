@@ -17,7 +17,7 @@ namespace HttpFileDownloader.Test
         }
 
         [Test]
-        public void Test1()
+        public void DownloadTest()
         {
             HttpDownloader downloader = new HttpDownloader(10, 1024, 2097152);
 

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "HttpFileDownloader.Console": {
+      "commandName": "Project",
+      "commandLineArgs": "https://www.sample-videos.com/img/Sample-jpg-image-30mb.jpg"
+    }
+  }
+}

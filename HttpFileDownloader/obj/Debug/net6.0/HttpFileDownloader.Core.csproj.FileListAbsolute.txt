@@ -22,3 +22,15 @@ C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader\b
 C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader\bin\Debug\net6.0\HttpFileDownloader.Core.dll
 C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader\bin\Debug\net6.0\HttpFileDownloader.Core.pdb
 C:\Users\nikit\OneDrive\Documents\GitHub\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\refint\HttpFileDownloader.Core.dll
+G:\GitHub\HttpFileDownloader\HttpFileDownloader\bin\Debug\net6.0\HttpFileDownloader.Core.deps.json
+G:\GitHub\HttpFileDownloader\HttpFileDownloader\bin\Debug\net6.0\HttpFileDownloader.Core.dll
+G:\GitHub\HttpFileDownloader\HttpFileDownloader\bin\Debug\net6.0\HttpFileDownloader.Core.pdb
+G:\GitHub\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\HttpFileDownloader.Core.csproj.AssemblyReference.cache
+G:\GitHub\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\HttpFileDownloader.Core.GeneratedMSBuildEditorConfig.editorconfig
+G:\GitHub\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\HttpFileDownloader.Core.AssemblyInfoInputs.cache
+G:\GitHub\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\HttpFileDownloader.Core.AssemblyInfo.cs
+G:\GitHub\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\HttpFileDownloader.Core.csproj.CoreCompileInputs.cache
+G:\GitHub\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\HttpFileDownloader.Core.dll
+G:\GitHub\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\refint\HttpFileDownloader.Core.dll
+G:\GitHub\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\HttpFileDownloader.Core.pdb
+G:\GitHub\HttpFileDownloader\HttpFileDownloader\obj\Debug\net6.0\ref\HttpFileDownloader.Core.dll

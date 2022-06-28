@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DsS7A8YlHOF9eH5r0KaJfGjAXC3JPHcD4ixZV6Ky9cOwEWq2dwJJO+CKv4KZBgIkPeprOZwBEIcjhDsHQb/bDw==",
+  "dgSpecHash": "bPyUbZNrOgm7wnH0mBfF3hMhPnojmBrqxsn+PGd06DDh2RSjuEjwQj6t7No90C1YVX1u3SnAZmXG7dW0jLjQQw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nikit\\OneDrive\\Documents\\GitHub\\HttpFileDownloader\\HttpFileDownloader\\HttpFileDownloader.Core.csproj",
+  "projectFilePath": "G:\\GitHub\\HttpFileDownloader\\HttpFileDownloader\\HttpFileDownloader.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nikit\\.nuget\\packages\\mimekit\\3.3.0\\mimekit.3.3.0.nupkg.sha512",
     "C:\\Users\\nikit\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512",

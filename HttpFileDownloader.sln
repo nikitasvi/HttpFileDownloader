@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpFileDownloader.Core", "HttpFileDownloader\HttpFileDownloader.Core.csproj", "{BEF00A4A-613C-4592-9DE7-66E0555C05E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpFileDownloader.Core", "HttpFileDownloader\HttpFileDownloader.Core.csproj", "{BEF00A4A-613C-4592-9DE7-66E0555C05E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpFileDownloader.Console", "HttpFileDownloader.Console\HttpFileDownloader.Console.csproj", "{20323169-30F7-4B6B-B980-41E2F104AE22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpFileDownloader.Test", "HttpFileDownloader.Test\HttpFileDownloader.Test.csproj", "{1521F216-BC19-4270-B593-12157C364623}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpFileDownloader.Test", "HttpFileDownloader.Test\HttpFileDownloader.Test.csproj", "{1521F216-BC19-4270-B593-12157C364623}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpFileDownloader.Console", "HttpFileDownloader.Console\HttpFileDownloader.Console.csproj", "{70C82030-AE23-4A68-A2DD-2B3CC59FFD52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{BEF00A4A-613C-4592-9DE7-66E0555C05E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEF00A4A-613C-4592-9DE7-66E0555C05E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEF00A4A-613C-4592-9DE7-66E0555C05E3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{20323169-30F7-4B6B-B980-41E2F104AE22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{20323169-30F7-4B6B-B980-41E2F104AE22}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{20323169-30F7-4B6B-B980-41E2F104AE22}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{20323169-30F7-4B6B-B980-41E2F104AE22}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1521F216-BC19-4270-B593-12157C364623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1521F216-BC19-4270-B593-12157C364623}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1521F216-BC19-4270-B593-12157C364623}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1521F216-BC19-4270-B593-12157C364623}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70C82030-AE23-4A68-A2DD-2B3CC59FFD52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70C82030-AE23-4A68-A2DD-2B3CC59FFD52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70C82030-AE23-4A68-A2DD-2B3CC59FFD52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70C82030-AE23-4A68-A2DD-2B3CC59FFD52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

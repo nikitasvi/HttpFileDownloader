@@ -4042,11 +4042,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nikit\\OneDrive\\Documents\\GitHub\\HttpFileDownloader\\HttpFileDownloader.Test\\HttpFileDownloader.Test.csproj",
+      "projectUniqueName": "G:\\GitHub\\HttpFileDownloader\\HttpFileDownloader.Test\\HttpFileDownloader.Test.csproj",
       "projectName": "HttpFileDownloader.Test",
-      "projectPath": "C:\\Users\\nikit\\OneDrive\\Documents\\GitHub\\HttpFileDownloader\\HttpFileDownloader.Test\\HttpFileDownloader.Test.csproj",
+      "projectPath": "G:\\GitHub\\HttpFileDownloader\\HttpFileDownloader.Test\\HttpFileDownloader.Test.csproj",
       "packagesPath": "C:\\Users\\nikit\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nikit\\OneDrive\\Documents\\GitHub\\HttpFileDownloader\\HttpFileDownloader.Test\\obj\\",
+      "outputPath": "G:\\GitHub\\HttpFileDownloader\\HttpFileDownloader.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nikit\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4063,8 +4063,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\nikit\\OneDrive\\Documents\\GitHub\\HttpFileDownloader\\HttpFileDownloader\\HttpFileDownloader.Core.csproj": {
-              "projectPath": "C:\\Users\\nikit\\OneDrive\\Documents\\GitHub\\HttpFileDownloader\\HttpFileDownloader\\HttpFileDownloader.Core.csproj"
+            "G:\\GitHub\\HttpFileDownloader\\HttpFileDownloader\\HttpFileDownloader.Core.csproj": {
+              "projectPath": "G:\\GitHub\\HttpFileDownloader\\HttpFileDownloader\\HttpFileDownloader.Core.csproj"
             }
           }
         }

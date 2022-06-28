@@ -180,11 +180,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nikit\\OneDrive\\Documents\\GitHub\\HttpFileDownloader\\HttpFileDownloader\\HttpFileDownloader.Core.csproj",
+      "projectUniqueName": "G:\\GitHub\\HttpFileDownloader\\HttpFileDownloader\\HttpFileDownloader.Core.csproj",
       "projectName": "HttpFileDownloader.Core",
-      "projectPath": "C:\\Users\\nikit\\OneDrive\\Documents\\GitHub\\HttpFileDownloader\\HttpFileDownloader\\HttpFileDownloader.Core.csproj",
+      "projectPath": "G:\\GitHub\\HttpFileDownloader\\HttpFileDownloader\\HttpFileDownloader.Core.csproj",
       "packagesPath": "C:\\Users\\nikit\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nikit\\OneDrive\\Documents\\GitHub\\HttpFileDownloader\\HttpFileDownloader\\obj\\",
+      "outputPath": "G:\\GitHub\\HttpFileDownloader\\HttpFileDownloader\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nikit\\AppData\\Roaming\\NuGet\\NuGet.Config",
